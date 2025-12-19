@@ -94,20 +94,17 @@ async function seed() {
   }
 
   await dataSource.destroy();
-  console.log('');
-  console.log('╔════════════════════════════════════════════════╗');
-  console.log('║  ✅ Seed completed successfully!               ║');
-  console.log('╠════════════════════════════════════════════════╣');
-  console.log('║  👤 Admin:                                     ║');
-  console.log('║     Email: admin@repair.com                    ║');
-  console.log('║     Pass:  admin123                            ║');
-  console.log('║  👷 Tech:                                       ║');
-  console.log('║     Email: tech@repair.com                     ║');
-  console.log('║     Pass:  password123                         ║');
-  console.log('╚════════════════════════════════════════════════╝');
-  console.log('');
+console.log('\n');
+console.log(' Seed completed successfully!');
+console.log('\n📦 Comptes créés:');
+console.log('\n👤 Admin:');
+console.log('   Email: admin@repair.com');
+console.log('   Pass:  admin123');
+console.log('\n👷 Technicien:');
+console.log('   Email: tech@repair.com');
+console.log('   Pass:  password123');
+console.log('\n💡 Tip: Utilise ces comptes pour tester l\'API\n');
 }
-
 // Lancer el seed
 seed().catch((error) => {
   console.error('❌ Seed failed:', error);
